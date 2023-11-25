@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "build-storybook": "storybook build"
   },
-  "dependencies": {
+  "peerDependencies": {
     "lit": "^3.1.0"
   },
   "devDependencies": {
@@ -19,6 +19,7 @@
     "@storybook/web-components": "^7.5.3",
     "@storybook/web-components-vite": "^7.5.3",
     "cz-conventional-changelog": "^3.3.0",
+    "lit": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.5.3",
