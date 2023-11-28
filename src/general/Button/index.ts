@@ -2,7 +2,7 @@ import { LitElement, css, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { classMap } from 'lit/directives/class-map.js'
 
-import { buttonSizeStyle, buttonTypeStyle, buttonDisabledStyle } from './styles/index'
+import { buttonSizeStyle, buttonTypeStyle } from './styles/index'
 
 @customElement('uni-button')
 export class UniButton extends LitElement {
@@ -46,12 +46,17 @@ export class UniButton extends LitElement {
 
       .button {
         font-weight: 600;
-
         border: none;
         outline: none;
-
         background: none;
         cursor: pointer;
+      }
+
+      .disabled {
+        color: #d9d9d9;
+        background-color: rgba(0, 0, 0, 0.04);
+        border: 1px solid #d9d9d9;
+        cursor: not-allowed;
       }
     `,
     buttonSizeStyle,
@@ -61,6 +66,5 @@ export class UniButton extends LitElement {
         border-radius: 9999px;
       }
     `,
-    buttonDisabledStyle,
   ]
 }

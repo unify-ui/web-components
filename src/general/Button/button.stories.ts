@@ -45,7 +45,7 @@ export const BasicUsage: Story = {
   },
   render: ({ type, size, rounded, disabled, htmlType }) =>
     html`
-      <uni-button type=${type} size=${size} .rounded=${rounded} .disabled=${disabled} htmlType=${htmlType}>
+      <uni-button type=${type} size=${size} ?rounded=${rounded} ?disabled=${disabled} htmlType=${htmlType}>
         Button
       </uni-button>
     `,
