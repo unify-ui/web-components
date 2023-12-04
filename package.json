@@ -4,7 +4,7 @@
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "types": "types/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "tsc -p tsconfig.prod.json",
@@ -16,8 +16,7 @@
   },
   "license": "MIT",
   "files": [
-    "dist",
-    "types"
+    "lib"
   ],
   "peerDependencies": {
     "lit": "^3.1.0"
