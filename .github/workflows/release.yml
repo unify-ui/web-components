@@ -34,6 +34,6 @@ jobs:
         if: steps.changesets.outputs.hasChangesets == 'false'
         run: |
           npm run build
-          npm publish
+          npx changesets publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
