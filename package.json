@@ -10,6 +10,7 @@
     "build": "tsc -p tsconfig.prod.json",
     "preview": "vite preview",
     "build-storybook": "storybook build",
+    "release": "npm run build && npm publish",
     "cz": "cz",
     "cs": "changeset",
     "csv": "changeset version"
