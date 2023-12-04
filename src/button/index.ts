@@ -2,7 +2,7 @@ import { LitElement, css, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { classMap } from 'lit/directives/class-map.js'
 
-import { buttonSizeStyle, buttonTypeStyle } from './styles/index'
+import { buttonSizeStyle, buttonTypeStyle } from './styles/index.js'
 
 @customElement('uni-button')
 export class UniButton extends LitElement {
@@ -31,7 +31,7 @@ export class UniButton extends LitElement {
     }
 
     return html`
-      <button type="${this.htmlType}" class=${classMap(className)}>
+      <button type=${this.htmlType} class=${classMap(className)}>
         <slot></slot>
       </button>
     `
@@ -67,4 +67,10 @@ export class UniButton extends LitElement {
       }
     `,
   ]
+}
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'uni-button': UniButton
+  }
 }
