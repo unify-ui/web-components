@@ -31,7 +31,7 @@ export class UButton extends LitElement {
     }
 
     return html`
-      <button type=${this.htmlType} class=${classMap(className)}>
+      <button type=${this.htmlType} class=${classMap(className)} ?disabled=${this.disabled}>
         <slot></slot>
       </button>
     `
