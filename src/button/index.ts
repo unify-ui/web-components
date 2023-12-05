@@ -4,8 +4,8 @@ import { classMap } from 'lit/directives/class-map.js'
 
 import { buttonSizeStyle, buttonTypeStyle } from './styles/index.js'
 
-@customElement('uni-button')
-export class UniButton extends LitElement {
+@customElement('u-button')
+export class UButton extends LitElement {
   @property({ type: String })
   type: 'secondary' | 'primary' | 'soft' = 'soft'
 
@@ -71,6 +71,6 @@ export class UniButton extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'uni-button': UniButton
+    'u-button': UButton
   }
 }

@@ -12,7 +12,7 @@ interface Args {
 
 const meta = {
   title: 'General/Button',
-  component: 'uni-button',
+  component: 'u-button',
   tags: ['autodocs'],
   argTypes: {
     type: {
@@ -45,9 +45,9 @@ export const BasicUsage: Story = {
   },
   render: ({ type, size, rounded, disabled, htmlType }) =>
     html`
-      <uni-button type=${type} size=${size} ?rounded=${rounded} ?disabled=${disabled} htmlType=${htmlType}>
+      <u-button type=${type} size=${size} ?rounded=${rounded} ?disabled=${disabled} htmlType=${htmlType}>
         Button
-      </uni-button>
+      </u-button>
     `,
 }
 
@@ -56,9 +56,9 @@ export const Type: Story = {
     type: 'primary',
   },
   render: () => html`
-    <uni-button type="soft"> Soft </uni-button>
-    <uni-button type="primary"> Primary </uni-button>
-    <uni-button type="secondary"> Secondary </uni-button>
+    <u-button type="soft"> Soft </u-button>
+    <u-button type="primary"> Primary </u-button>
+    <u-button type="secondary"> Secondary </u-button>
   `,
 }
 
@@ -67,11 +67,11 @@ export const ButtonSize: Story = {
     size: 'm',
   },
   render: () => html`
-    <uni-button size="xs">XS</uni-button>
-    <uni-button size="s">S</uni-button>
-    <uni-button size="m">M</uni-button>
-    <uni-button size="l">L</uni-button>
-    <uni-button size="xl">XL</uni-button>
+    <u-button size="xs">XS</u-button>
+    <u-button size="s">S</u-button>
+    <u-button size="m">M</u-button>
+    <u-button size="l">L</u-button>
+    <u-button size="xl">XL</u-button>
   `,
 }
 
@@ -80,9 +80,9 @@ export const Rounded: Story = {
     rounded: true,
   },
   render: () => html`
-    <uni-button type="soft" rounded> Soft </uni-button>
-    <uni-button type="primary" rounded> Primary </uni-button>
-    <uni-button type="secondary" rounded> Secondary </uni-button>
+    <u-button type="soft" rounded> Soft </u-button>
+    <u-button type="primary" rounded> Primary </u-button>
+    <u-button type="secondary" rounded> Secondary </u-button>
   `,
 }
 
@@ -91,7 +91,7 @@ export const Disabled: Story = {
     disabled: true,
   },
   render: () => html`
-    <uni-button disabled> Disabled</uni-button>
-    <uni-button disabled rounded> Disabled</uni-button>
+    <u-button disabled> Disabled</u-button>
+    <u-button disabled rounded> Disabled</u-button>
   `,
 }
