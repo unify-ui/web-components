@@ -1,5 +1,11 @@
 # @unify-ui/web-components
 
+## 0.1.5
+
+### Patch Changes
+
+- 1e7559c: add disabled attribute for the Button component
+
 ## 0.1.4
 
 ### Patch Changes
