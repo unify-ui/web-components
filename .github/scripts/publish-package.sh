@@ -11,6 +11,8 @@ is_modify=$(git status --porcelain)
 if [ ! -z "$is_modify" ]; then
     echo "packages version changed"
 
+    npm install || utils::check_fail $? "npm install failed" 
+
     git config user.name "luohuidong"
     git config user.email "luohuidong01@126.com"
     git add .
