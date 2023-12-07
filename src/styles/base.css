@@ -65,31 +65,31 @@
   --u-blue-800: #1e40af;
   --u-blue-900: #1e3a8a;
 
-  --u-light: #ffffff;
-  --u-dark: #000000;
+  --u-color-light: #ffffff;
+  --u-color-dark: #000000;
 
-  --u-background-light: var(--u-light);
-  --u-background-dark: var(--u-dark);
+  --u-color-background-light: var(--u-light);
+  --u-color-background-dark: var(--u-dark);
 
-  --u-primary: var(--u-indigo-600);
-  --u-primary-disabled: var(--u-indigo-400);
-  --u-primary-font: var(--u-indigo-600);
+  --u-color-primary: var(--u-indigo-600);
+  --u-color-primary-disabled: var(--u-indigo-400);
+  --u-color-primary-font: var(--u-indigo-600);
 
-  --u-info-font: var(--u-blue-600);
-  --u-info-background: var(--u-blue-100);
-  --u-info-border: var(--u-blue-600);
+  --u-color-info-font: var(--u-blue-600);
+  --u-color-info-background: var(--u-blue-100);
+  --u-color-info-border: var(--u-blue-600);
 
-  --u-success-font: var(--u-green-600);
-  --u-success-background: var(--u-green-100);
-  --u-success-border: var(--u-green-600);
+  --u-color-success-font: var(--u-green-600);
+  --u-color-success-background: var(--u-green-100);
+  --u-color-success-border: var(--u-green-600);
 
-  --u-error-font: var(--u-red-500);
-  --u-error-background: var(--u-red-100);
-  --u-error-border: var(--u-red-500);
+  --u-color-error-font: var(--u-red-500);
+  --u-color-error-background: var(--u-red-100);
+  --u-color-error-border: var(--u-red-500);
 
-  --u-warning-font: var(--u-yellow-600);
-  --u-warning-background: var(--u-yellow-100);
-  --u-warning-border: var(--u-yellow-600);
+  --u-color-warning-font: var(--u-yellow-600);
+  --u-color-warning-background: var(--u-yellow-100);
+  --u-color-warning-border: var(--u-yellow-600);
 
   --u-text-xs-font-size: 12px;
   --u-text-xs-line-height: 16px;
