@@ -7,7 +7,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "tsc -p tsconfig.prod.json",
+    "build": "./scripts/build.sh",
     "preview": "vite preview",
     "build-storybook": "storybook build",
     "cz": "cz",
