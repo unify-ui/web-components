@@ -1,5 +1,11 @@
 # @unify-ui/web-components
 
+## 0.2.0
+
+### Minor Changes
+
+- dd74d60: add u-tag component
+
 ## 0.1.5
 
 ### Patch Changes
