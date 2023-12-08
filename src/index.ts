@@ -1,1 +1,2 @@
-import './button/index.js'
+import './button/index.js';
+import './tag/index.js';

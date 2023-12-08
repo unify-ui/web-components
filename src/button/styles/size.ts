@@ -1,4 +1,4 @@
-import { css } from 'lit'
+import { css } from 'lit';
 
 export const buttonSizeStyle = css`
   .size-xs {
@@ -35,4 +35,4 @@ export const buttonSizeStyle = css`
     font-size: 14px;
     line-height: 20px;
   }
-`
+`;

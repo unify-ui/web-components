@@ -1,13 +1,13 @@
-import type { StoryObj, Meta } from '@storybook/web-components'
-import { html } from 'lit'
-import './index'
+import type { StoryObj, Meta } from '@storybook/web-components';
+import { html } from 'lit';
+import './index';
 
 interface Args {
-  type: 'secondary' | 'primary' | 'soft'
-  size: 'xs' | 's' | 'm' | 'l' | 'xl'
-  rounded: boolean
-  htmlType: 'button' | 'submit' | 'reset'
-  disabled: boolean
+  type: 'secondary' | 'primary' | 'soft';
+  size: 'xs' | 's' | 'm' | 'l' | 'xl';
+  rounded: boolean;
+  htmlType: 'button' | 'submit' | 'reset';
+  disabled: boolean;
 }
 
 const meta = {
@@ -30,10 +30,10 @@ const meta = {
       control: { type: 'radio' },
     },
   },
-} satisfies Meta<Args>
+} satisfies Meta<Args>;
 
-export default meta
-type Story = StoryObj<Args>
+export default meta;
+type Story = StoryObj<Args>;
 
 export const BasicUsage: Story = {
   args: {
@@ -49,7 +49,7 @@ export const BasicUsage: Story = {
         Button
       </u-button>
     `,
-}
+};
 
 export const Type: Story = {
   args: {
@@ -60,7 +60,7 @@ export const Type: Story = {
     <u-button type="primary"> Primary </u-button>
     <u-button type="secondary"> Secondary </u-button>
   `,
-}
+};
 
 export const ButtonSize: Story = {
   args: {
@@ -73,7 +73,7 @@ export const ButtonSize: Story = {
     <u-button size="l">L</u-button>
     <u-button size="xl">XL</u-button>
   `,
-}
+};
 
 export const Rounded: Story = {
   args: {
@@ -84,7 +84,7 @@ export const Rounded: Story = {
     <u-button type="primary" rounded> Primary </u-button>
     <u-button type="secondary" rounded> Secondary </u-button>
   `,
-}
+};
 
 export const Disabled: Story = {
   args: {
@@ -94,4 +94,4 @@ export const Disabled: Story = {
     <u-button disabled> Disabled</u-button>
     <u-button disabled rounded> Disabled</u-button>
   `,
-}
+};

@@ -1,25 +1,25 @@
-import { LitElement, css, html } from 'lit'
-import { customElement, property } from 'lit/decorators.js'
-import { classMap } from 'lit/directives/class-map.js'
+import { LitElement, css, html } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
+import { classMap } from 'lit/directives/class-map.js';
 
-import { buttonSizeStyle, buttonTypeStyle } from './styles/index.js'
+import { buttonSizeStyle, buttonTypeStyle } from './styles/index.js';
 
 @customElement('u-button')
 export class UButton extends LitElement {
   @property({ type: String })
-  type: 'secondary' | 'primary' | 'soft' = 'soft'
+  type: 'secondary' | 'primary' | 'soft' = 'soft';
 
   @property({ type: String })
-  size: 'xs' | 's' | 'm' | 'l' | 'xl' = 'm'
+  size: 'xs' | 's' | 'm' | 'l' | 'xl' = 'm';
 
   @property({ type: Boolean })
-  rounded = false
+  rounded = false;
 
   @property({ type: Boolean })
-  disabled = false
+  disabled = false;
 
   @property({ type: String })
-  htmlType: 'button' | 'submit' | 'reset' = 'button'
+  htmlType: 'button' | 'submit' | 'reset' = 'button';
 
   render() {
     const className = {
@@ -28,13 +28,13 @@ export class UButton extends LitElement {
       [`type-${this.type}`]: !this.disabled,
       disabled: this.disabled,
       rounded: this.rounded,
-    }
+    };
 
     return html`
       <button type=${this.htmlType} class=${classMap(className)} ?disabled=${this.disabled}>
         <slot></slot>
       </button>
-    `
+    `;
   }
 
   static styles = [
@@ -66,11 +66,11 @@ export class UButton extends LitElement {
         border-radius: 9999px;
       }
     `,
-  ]
+  ];
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    'u-button': UButton
+    'u-button': UButton;
   }
 }
