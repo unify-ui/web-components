@@ -1,4 +1,4 @@
-import { css } from 'lit'
+import { css } from 'lit';
 
 export const buttonTypeStyle = css`
   .type-primary {
@@ -36,4 +36,4 @@ export const buttonTypeStyle = css`
     background-color: rgb(224 231 255);
     border-color: rgb(224 231 255);
   }
-`
+`;
