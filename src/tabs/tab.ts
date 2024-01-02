@@ -14,7 +14,7 @@ export class UTab extends LitElement {
   isActive: boolean = false;
 
   private _handleTabClick(value: string) {
-    this.dispatchEvent(new CustomEvent('tab-click', { detail: value }));
+    this.dispatchEvent(new CustomEvent<string>('tab-click', { detail: value }));
   }
 
   render() {

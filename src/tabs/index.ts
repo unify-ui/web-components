@@ -11,13 +11,21 @@ export class UTabs extends LitElement {
   @property({ type: String })
   activeTab: string = '';
 
+  private _handleTabClick(e: CustomEvent<string>) {
+    this.dispatchEvent(new CustomEvent('tab-click', { detail: e.detail }));
+  }
+
   render() {
-    console.log('activeTab', this.activeTab);
     return html`
       <div class="tabs">
         ${this.items.map(
           (item) =>
-            html`<u-tab label=${item.label} value=${item.value} ?isActive=${this.activeTab === item.value}></u-tab>`
+            html`<u-tab
+              label=${item.label}
+              value=${item.value}
+              ?isActive=${this.activeTab === item.value}
+              @tab-click=${this._handleTabClick}
+            ></u-tab>`
         )}
         <div class="line"></div>
       </div>
