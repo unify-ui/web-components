@@ -1,5 +1,11 @@
 # @unify-ui/web-components
 
+## 0.3.0
+
+### Minor Changes
+
+- 4874667: Add the Tabs components
+
 ## 0.2.0
 
 ### Minor Changes
