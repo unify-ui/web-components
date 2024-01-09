@@ -5,14 +5,7 @@ import '../index.js';
 @customElement('show-case-basic-usage')
 export class UTag extends LitElement {
   @state()
-  items = [
-    { label: 'Tab1', value: 'tab1' },
-    { label: 'Tab2', value: 'tab2' },
-    { label: 'Tab3', value: 'tab3' },
-    { label: 'Tab4', value: 'tab4' },
-    { label: 'Tab5', value: 'tab5' },
-    { label: 'Tab6', value: 'tab6' },
-  ];
+  items = new Array(20).fill(0).map((_, index) => ({ label: `Tab${index}`, value: `tab${index}` }));
 
   @state()
   activeTab = 'tab1';
