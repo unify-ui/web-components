@@ -3,37 +3,37 @@ import { css } from 'lit';
 export const buttonTypeStyle = css`
   .type-primary {
     color: white;
-    background-color: rgb(79 70 229);
-    border: 1px solid rgb(79 70 229);
+    background-color: var(--u-indigo-600);
+    border: 1px solid var(--u-indigo-600);
   }
 
   .type-primary:hover,
   .type-primary:active {
-    background-color: rgb(99 102 241);
-    border-color: rgb(99 102 241);
+    background-color: var(--u-indigo-500);
+    border-color: var(--u-indigo-500);
   }
 
   .type-secondary {
-    color: rgb(17 24 39);
-    background-color: rgb(255 255 255);
-    border: 1px solid #e5e7eb;
+    color: var(--u-gray-900);
+    background-color: var(--u-color-light);
+    border: 1px solid var(--u-gray-200);
   }
 
   .type-secondary:hover,
   .type-secondary:active {
-    background-color: rgb(249 250 251);
-    border-color: #e5e7eb;
+    background-color: var(--u-gray-50);
+    border-color: var(--u-gray-200);
   }
 
   .type-soft {
-    color: rgb(79 70 229);
-    background-color: rgb(238 242 255);
-    border: 1px solid rgb(238 242 255);
+    color: var(--u-indigo-600);
+    background-color: var(--u-indigo-50);
+    border: 1px solid var(--u-indigo-50);
   }
 
   .type-soft:hover,
   .type-soft:active {
-    background-color: rgb(224 231 255);
-    border-color: rgb(224 231 255);
+    background-color: var(--u-indigo-100);
+    border-color: var(--u-indigo-100);
   }
 `;

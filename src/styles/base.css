@@ -68,8 +68,8 @@
   --u-color-light: #ffffff;
   --u-color-dark: #000000;
 
-  --u-color-background-light: var(--u-light);
-  --u-color-background-dark: var(--u-dark);
+  --u-color-background-light: var(--u-color-light);
+  --u-color-background-dark: var(--u-color-dark);
 
   --u-color-primary: var(--u-indigo-600);
   --u-color-primary-disabled: var(--u-indigo-400);
